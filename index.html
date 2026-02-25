@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ETCP — Verified Eco-Tourism Cloud Platform. Discover, book, and plan sustainable travel experiences worldwide with certified eco-lodges and tours." />
+  <meta name="keywords" content="eco-tourism, sustainable travel, eco-lodge, green travel, carbon footprint, responsible tourism" />
+  <meta name="author" content="Eco-Tourism Cloud Platform" />
+  <meta property="og:title" content="ETCP — Verified Eco-Tourism Experiences" />
+  <meta property="og:description" content="Connect with verified eco-lodges and sustainable tours worldwide. Travel responsibly." />
+  <title>ETCP — Eco-Tourism Cloud Platform</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       SKIP NAVIGATION (Accessibility)
+  ============================================================ -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================================
+       TOAST NOTIFICATIONS
+  ============================================================ -->
+  <div id="toast-container" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ============================================================
+       LOADING OVERLAY
+  ============================================================ -->
+  <div id="loading-overlay" class="loading-overlay" aria-hidden="true">
+    <div class="loading-spinner">
+      <div class="spinner-leaf"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+      <p>Loading ETCP...</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="#" class="nav-logo" data-page="home" aria-label="ETCP Home">
+          <span class="logo-icon" aria-hidden="true"><i class="fas fa-leaf"></i></span>
+          <span class="logo-text">ETCP</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#" class="nav-link" data-page="home" aria-current="page">Home</a></li>
+          <li><a href="#" class="nav-link" data-page="discover">Discover</a></li>
+          <li><a href="#" class="nav-link" data-page="voyager">Voyager</a></li>
+          <li><a href="#" class="nav-link" data-page="network">Network</a></li>
+        </ul>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <button class="btn btn-ghost btn-sm" id="nav-wishlist-btn" data-page="dashboard" aria-label="Wishlist">
+            <i class="fas fa-heart" aria-hidden="true"></i>
+            <span class="wishlist-count badge" id="wishlist-badge" aria-label="0 items in wishlist">0</span>
+          </button>
+          <button class="btn btn-outline btn-sm" id="nav-login-btn" aria-label="Login or Register">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            <span id="nav-auth-label">Login</span>
+          </button>
+          <button class="btn btn-primary btn-sm" data-page="network" aria-label="List your eco-lodge">
+            List Your Lodge
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle mobile navigation" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+      </div>
+
+      <!-- Mobile Nav Dropdown -->
+      <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation" hidden>
+        <ul class="mobile-nav-links" role="list">
+          <li><a href="#" class="nav-link mobile-nav-link" data-page="home">Home</a></li>
+          <li><a href="#" class="nav-link mobile-nav-link" data-page="discover">Discover Experiences</a></li>
+          <li><a href="#" class="nav-link mobile-nav-link" data-page="voyager">Trip Voyager</a></li>
+          <li><a href="#" class="nav-link mobile-nav-link" data-page="network">Provider Network</a></li>
+          <li><a href="#" class="nav-link mobile-nav-link" data-page="dashboard">My Journeys</a></li>
+          <li><a href="#" class="nav-link mobile-nav-link" data-page="settings">Settings</a></li>
+          <li><button class="btn btn-primary btn-full" id="mobile-login-btn">Login / Register</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT — SPA Page Sections
+  ============================================================ -->
+  <main id="main-content" role="main">
+
+    <!-- ==================== PAGE: HOME ==================== -->
+    <section id="page-home" class="page active" aria-label="Home page">
+
+      <!-- Hero Section -->
+      <section class="hero" aria-label="Hero section">
+        <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-certificate" aria-hidden="true"></i>
+            <span>Verified Sustainable Experiences</span>
+          </div>
+          <h1 class="hero-title">
+            Travel with <span class="text-accent">Purpose</span>.<br />
+            Leave Only <span class="text-accent">Footprints</span>.
+          </h1>
+          <p class="hero-subtitle">
+            Discover 500+ verified eco-lodges and sustainable experiences across 60 countries.
+            Every booking directly supports conservation and local communities.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary btn-lg" data-page="discover" aria-label="Explore eco destinations">
+              <i class="fas fa-compass" aria-hidden="true"></i>
+              Explore Destinations
+            </button>
+            <button class="btn btn-outline-white btn-lg" data-page="network" aria-label="List your eco lodge">
+              <i class="fas fa-plus" aria-hidden="true"></i>
+              List Your Eco-Lodge
+            </button>
+          </div>
+          <div class="hero-stats" aria-label="Platform statistics">
+            <div class="stat-item">
+              <span class="stat-number" id="stat-destinations">500+</span>
+              <span class="stat-label">Eco Destinations</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true">|</div>
+            <div class="stat-item">
+              <span class="stat-number">60+</span>
+              <span class="stat-label">Countries</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true">|</div>
+            <div class="stat-item">
+              <span class="stat-number">12K+</span>
+              <span class="stat-label">Happy Travelers</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true">|</div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Satisfaction Rate</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll to explore</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- Search Bar Quick Access -->
+      <section class="quick-search" aria-label="Quick destination search">
+        <div class="container">
+          <div class="search-card">
+            <div class="search-row">
+              <div class="search-field">
+                <label for="quick-location" class="sr-only">Destination</label>
+                <i class="fas fa-map-marker-alt search-icon" aria-hidden="true"></i>
+                <select id="quick-location" class="search-input" aria-label="Select destination">
+                  <option value="">Any Destination</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Ecuador">Galápagos</option>
+                  <option value="Peru">Amazon, Peru</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Australia">Tasmania</option>
+                  <option value="United Kingdom">Scotland</option>
+                </select>
+              </div>
+              <div class="search-field">
+                <label for="quick-activity" class="sr-only">Activity type</label>
+                <i class="fas fa-hiking search-icon" aria-hidden="true"></i>
+                <select id="quick-activity" class="search-input" aria-label="Select activity type">
+                  <option value="">Any Activity</option>
+                  <option value="Hiking">Hiking</option>
+                  <option value="Wildlife Watching">Wildlife Watching</option>
+                  <option value="Marine Conservation">Marine Conservation</option>
+                  <option value="Cultural Immersion">Cultural Immersion</option>
+                  <option value="Kayaking">Kayaking</option>
+                  <option value="Safari">Safari</option>
+                  <option value="Birdwatching">Birdwatching</option>
+                </select>
+              </div>
+              <div class="search-field">
+                <label for="quick-rating" class="sr-only">Minimum sustainability rating</label>
+                <i class="fas fa-seedling search-icon" aria-hidden="true"></i>
+                <select id="quick-rating" class="search-input" aria-label="Select minimum sustainability rating">
+                  <option value="">Any Rating</option>
+                  <option value="5">5 Eco-Leaves</option>
+                  <option value="4">4+ Eco-Leaves</option>
+                  <option value="3">3+ Eco-Leaves</option>
+                </select>
+              </div>
+              <button class="btn btn-primary search-btn" id="quick-search-btn" aria-label="Search destinations">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Destinations -->
+      <section class="section featured-section" aria-label="Featured eco destinations">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">
+              <i class="fas fa-star" aria-hidden="true"></i> Featured
+            </div>
+            <h2 class="section-title">Top Verified Eco Experiences</h2>
+            <p class="section-subtitle">Hand-picked destinations with the highest sustainability certifications</p>
+          </div>
+          <div class="cards-grid" id="featured-destinations" aria-label="Featured destinations grid">
+            <!-- Dynamically populated -->
+          </div>
+          <div class="section-cta">
+            <button class="btn btn-outline btn-lg" data-page="discover" aria-label="View all destinations">
+              View All Destinations <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="section how-it-works" aria-label="How ETCP works">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag"><i class="fas fa-leaf" aria-hidden="true"></i> Simple Process</div>
+            <h2 class="section-title">How ETCP Works</h2>
+            <p class="section-subtitle">From discovery to impact — every step verified and transparent</p>
+          </div>
+          <div class="steps-grid">
+            <div class="step-card" role="article">
+              <div class="step-icon step-1" aria-hidden="true"><i class="fas fa-search"></i></div>
+              <div class="step-number" aria-hidden="true">01</div>
+              <h3>Discover</h3>
+              <p>Browse verified eco-lodges and sustainable experiences filtered by location, activity, and sustainability rating.</p>
+            </div>
+            <div class="step-connector" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+            <div class="step-card" role="article">
+              <div class="step-icon step-2" aria-hidden="true"><i class="fas fa-certificate"></i></div>
+              <div class="step-number" aria-hidden="true">02</div>
+              <h3>Verify</h3>
+              <p>Every provider is verified against international eco-certifications. See real sustainability data before you book.</p>
+            </div>
+            <div class="step-connector" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+            <div class="step-card" role="article">
+              <div class="step-icon step-3" aria-hidden="true"><i class="fas fa-calendar-check"></i></div>
+              <div class="step-number" aria-hidden="true">03</div>
+              <h3>Book</h3>
+              <p>Book securely with transparent pricing, including an eco-tax that funds conservation programs directly.</p>
+            </div>
+            <div class="step-connector" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+            <div class="step-card" role="article">
+              <div class="step-icon step-4" aria-hidden="true"><i class="fas fa-globe-americas"></i></div>
+              <div class="step-number" aria-hidden="true">04</div>
+              <h3>Impact</h3>
+              <p>Track your carbon footprint, eco-points, and the real-world conservation impact of your travels.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certification Partners -->
+      <section class="section certifications-section" aria-label="Certification partners">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Trusted Certification Partners</h2>
+            <p class="section-subtitle">Every experience verified by globally recognized sustainability bodies</p>
+          </div>
+          <div class="cert-logos" aria-label="List of certification partners">
+            <div class="cert-badge" role="img" aria-label="Green Globe certification">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <span>Green Globe</span>
+            </div>
+            <div class="cert-badge" role="img" aria-label="EarthCheck certification">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>EarthCheck</span>
+            </div>
+            <div class="cert-badge" role="img" aria-label="Rainforest Alliance certification">
+              <i class="fas fa-tree" aria-hidden="true"></i>
+              <span>Rainforest Alliance</span>
+            </div>
+            <div class="cert-badge" role="img" aria-label="Nordic Swan Ecolabel certification">
+              <i class="fas fa-snowflake" aria-hidden="true"></i>
+              <span>Nordic Swan</span>
+            </div>
+            <div class="cert-badge" role="img" aria-label="UNESCO Partner">
+              <i class="fas fa-university" aria-hidden="true"></i>
+              <span>UNESCO Partner</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Counter -->
+      <section class="section impact-section" aria-label="Platform environmental impact">
+        <div class="container">
+          <div class="impact-grid">
+            <div class="impact-text">
+              <div class="section-tag"><i class="fas fa-leaf" aria-hidden="true"></i> Real Impact</div>
+              <h2 class="section-title">Travel That Gives Back</h2>
+              <p>ETCP is not just a booking platform. Every reservation funds conservation, supports local communities, and helps fight climate change. Our verified providers are committed to the highest sustainability standards.</p>
+              <button class="btn btn-primary btn-lg" data-page="discover" aria-label="Start your eco journey">
+                Start Your Eco Journey <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="impact-counters" aria-label="Impact statistics">
+              <div class="impact-counter">
+                <i class="fas fa-tree counter-icon" aria-hidden="true"></i>
+                <span class="counter-number" data-target="48320">0</span>
+                <span class="counter-label">Trees Planted</span>
+              </div>
+              <div class="impact-counter">
+                <i class="fas fa-cloud counter-icon" aria-hidden="true"></i>
+                <span class="counter-number" data-target="12540">0</span>
+                <span class="counter-label">Tonnes CO₂ Offset</span>
+              </div>
+              <div class="impact-counter">
+                <i class="fas fa-users counter-icon" aria-hidden="true"></i>
+                <span class="counter-number" data-target="3200">0</span>
+                <span class="counter-label">Jobs Created</span>
+              </div>
+              <div class="impact-counter">
+                <i class="fas fa-paw counter-icon" aria-hidden="true"></i>
+                <span class="counter-number" data-target="890">0</span>
+                <span class="counter-label">Species Protected</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials-section" aria-label="Traveler testimonials">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag"><i class="fas fa-quote-left" aria-hidden="true"></i> Stories</div>
+            <h2 class="section-title">From Our Travelers</h2>
+          </div>
+          <div class="testimonials-grid">
+            <blockquote class="testimonial-card">
+              <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+              <p>"ETCP helped me find an eco-lodge in Costa Rica that was genuinely sustainable — not just greenwashing. I saw jaguars, slept under the stars, and knew my money went to the right people."</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">A</div>
+                <div>
+                  <strong>Anna Müller</strong>
+                  <span>Berlin, Germany</span>
+                </div>
+                <div class="star-display" aria-label="5 star rating" role="img">
+                  <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+              <p>"As a provider, ETCP has transformed our eco-lodge's visibility. International eco-travelers now find us through the platform and our bookings have tripled in one year."</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">S</div>
+                <div>
+                  <strong>Saman Perera</strong>
+                  <span>Sinharaja, Sri Lanka</span>
+                </div>
+                <div class="star-display" aria-label="5 star rating" role="img">
+                  <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+              <p>"The carbon footprint tracker in Voyager helped me plan a 3-week trip with the smallest possible impact. I offset every tonne and even planted 20 trees. Travel guilt — gone."</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">T</div>
+                <div>
+                  <strong>Thomas Bergmann</strong>
+                  <span>Amsterdam, Netherlands</span>
+                </div>
+                <div class="star-display" aria-label="5 star rating" role="img">
+                  <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+    </section>
+    <!-- END PAGE: HOME -->
+
+    <!-- ==================== PAGE: DISCOVER ==================== -->
+    <section id="page-discover" class="page" aria-label="Discover eco destinations" hidden>
+      <div class="page-hero page-hero-discover">
+        <div class="container">
+          <h1 class="page-hero-title">Eco-Discovery Hub</h1>
+          <p class="page-hero-subtitle">Find your perfect verified eco-tourism experience</p>
+        </div>
+      </div>
+      <div class="container discover-layout">
+
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar" aria-label="Search filters">
+          <div class="filters-header">
+            <h2><i class="fas fa-filter" aria-hidden="true"></i> Filters</h2>
+            <button class="btn btn-ghost btn-sm" id="clear-filters-btn" aria-label="Clear all filters">Clear All</button>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-location" class="filter-label">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Destination
+            </label>
+            <select id="filter-location" class="filter-select" aria-label="Filter by destination">
+              <option value="">All Destinations</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Iceland">Iceland</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Norway">Norway</option>
+              <option value="Bhutan">Bhutan</option>
+              <option value="Ecuador">Galápagos, Ecuador</option>
+              <option value="Peru">Amazon, Peru</option>
+              <option value="Madagascar">Madagascar</option>
+              <option value="Australia">Tasmania, Australia</option>
+              <option value="United Kingdom">Scotland, UK</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label"><i class="fas fa-hiking" aria-hidden="true"></i> Activity Type</span>
+            <div class="checkbox-group" role="group" aria-label="Filter by activity type">
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Hiking" /> Hiking</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Wildlife Watching" /> Wildlife Watching</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Marine Conservation" /> Marine Conservation</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Cultural Immersion" /> Cultural Immersion</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Kayaking" /> Kayaking</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Safari" /> Safari</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Birdwatching" /> Birdwatching</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Conservation Volunteering" /> Volunteering</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-activity" value="Trekking" /> Trekking</label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label"><i class="fas fa-seedling" aria-hidden="true"></i> Sustainability Rating</span>
+            <div class="radio-group" role="radiogroup" aria-label="Filter by sustainability rating">
+              <label class="radio-label"><input type="radio" name="filter-rating" value="" checked /> Any Rating</label>
+              <label class="radio-label"><input type="radio" name="filter-rating" value="5" /> <span class="eco-leaves-sm" aria-label="5 eco-leaves">🍃🍃🍃🍃🍃</span> 5 Eco-Leaves</label>
+              <label class="radio-label"><input type="radio" name="filter-rating" value="4" /> <span class="eco-leaves-sm" aria-label="4+ eco-leaves">🍃🍃🍃🍃</span> 4+ Eco-Leaves</label>
+              <label class="radio-label"><input type="radio" name="filter-rating" value="3" /> <span class="eco-leaves-sm" aria-label="3+ eco-leaves">🍃🍃🍃</span> 3+ Eco-Leaves</label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label"><i class="fas fa-certificate" aria-hidden="true"></i> Certification</span>
+            <div class="checkbox-group" role="group" aria-label="Filter by certification">
+              <label class="checkbox-label"><input type="checkbox" class="filter-cert" value="Green Globe" /> Green Globe</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-cert" value="EarthCheck" /> EarthCheck</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-cert" value="Rainforest Alliance" /> Rainforest Alliance</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-cert" value="Nordic Swan Ecolabel" /> Nordic Swan</label>
+              <label class="checkbox-label"><input type="checkbox" class="filter-cert" value="UNESCO Partner" /> UNESCO Partner</label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-max-price" class="filter-label">
+              <i class="fas fa-tag" aria-hidden="true"></i> Max Price: <span id="price-display">$500/night</span>
+            </label>
+            <input type="range" id="filter-max-price" class="price-range" min="50" max="500" value="500" step="10" aria-label="Maximum price per night" aria-valuemin="50" aria-valuemax="500" aria-valuenow="500" />
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-sort" class="filter-label">
+              <i class="fas fa-sort" aria-hidden="true"></i> Sort By
+            </label>
+            <select id="filter-sort" class="filter-select" aria-label="Sort destinations by">
+              <option value="rating-desc">Rating (High to Low)</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+              <option value="carbon-asc">Lowest Carbon Footprint</option>
+            </select>
+          </div>
+
+        </aside>
+
+        <!-- Results Area -->
+        <div class="discover-results">
+          <div class="results-toolbar" role="toolbar" aria-label="Results display controls">
+            <div class="results-info">
+              <span id="results-count" aria-live="polite">Loading destinations...</span>
+            </div>
+            <div class="view-toggle" role="group" aria-label="Toggle view layout">
+              <button class="view-btn active" id="grid-view-btn" aria-label="Grid view" aria-pressed="true">
+                <i class="fas fa-th" aria-hidden="true"></i>
+              </button>
+              <button class="view-btn" id="list-view-btn" aria-label="List view" aria-pressed="false">
+                <i class="fas fa-list" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Search in results -->
+          <div class="results-search">
+            <div class="search-input-wrap">
+              <i class="fas fa-search search-icon" aria-hidden="true"></i>
+              <input type="text" id="discover-search" class="search-input" placeholder="Search destinations, activities..." aria-label="Search destinations" />
+            </div>
+          </div>
+
+          <div id="destinations-grid" class="cards-grid" aria-label="Destinations grid">
+            <!-- Dynamically populated -->
+          </div>
+          <div id="no-results" class="empty-state" hidden aria-live="polite">
+            <i class="fas fa-search empty-icon" aria-hidden="true"></i>
+            <h3>No destinations found</h3>
+            <p>Try adjusting your filters or search term to find eco-experiences.</p>
+            <button class="btn btn-outline" id="reset-filters-btn">Reset All Filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PAGE: DISCOVER -->
+
+    <!-- ==================== PAGE: DESTINATION DETAIL ==================== -->
+    <section id="page-detail" class="page" aria-label="Destination details" hidden>
+      <div id="detail-content">
+        <!-- Dynamically populated by JS -->
+      </div>
+    </section>
+    <!-- END PAGE: DESTINATION DETAIL -->
+
+    <!-- ==================== PAGE: VOYAGER ==================== -->
+    <section id="page-voyager" class="page" aria-label="Trip Voyager itinerary planner" hidden>
+      <div class="page-hero page-hero-voyager">
+        <div class="container">
+          <h1 class="page-hero-title">ETCP Voyager</h1>
+          <p class="page-hero-subtitle">Plan your perfect eco-itinerary and track your sustainability impact</p>
+        </div>
+      </div>
+      <div class="container voyager-layout">
+
+        <!-- Destination Browser for Voyager -->
+        <div class="voyager-browser">
+          <h2><i class="fas fa-plus-circle" aria-hidden="true"></i> Add to Itinerary</h2>
+          <div class="search-input-wrap">
+            <i class="fas fa-search search-icon" aria-hidden="true"></i>
+            <input type="text" id="voyager-search" class="search-input" placeholder="Search eco destinations..." aria-label="Search eco destinations to add" />
+          </div>
+          <div id="voyager-destination-list" class="voyager-dest-list" aria-label="Available destinations">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Itinerary Builder -->
+        <div class="voyager-planner">
+          <div class="voyager-header">
+            <h2><i class="fas fa-map-marked-alt" aria-hidden="true"></i> My Eco-Itinerary</h2>
+            <div class="voyager-actions">
+              <button class="btn btn-ghost btn-sm" id="clear-itinerary-btn" aria-label="Clear itinerary">
+                <i class="fas fa-trash" aria-hidden="true"></i> Clear
+              </button>
+              <button class="btn btn-outline btn-sm" id="export-itinerary-btn" aria-label="Export itinerary">
+                <i class="fas fa-download" aria-hidden="true"></i> Export
+              </button>
+              <button class="btn btn-primary btn-sm" id="save-itinerary-btn" aria-label="Save itinerary">
+                <i class="fas fa-save" aria-hidden="true"></i> Save
+              </button>
+            </div>
+          </div>
+
+          <div id="itinerary-container" class="itinerary-list" aria-label="Itinerary items" role="list">
+            <div class="itinerary-empty" id="itinerary-empty">
+              <i class="fas fa-map" aria-hidden="true"></i>
+              <p>Add destinations from the left panel to start building your itinerary.</p>
+              <p class="text-muted">Maximum 7 destinations per trip.</p>
+            </div>
+          </div>
+
+          <!-- Sustainability Summary -->
+          <div class="sustainability-summary" id="sustainability-summary" hidden aria-label="Trip sustainability metrics">
+            <h3><i class="fas fa-leaf" aria-hidden="true"></i> Trip Sustainability Score</h3>
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <i class="fas fa-cloud metric-icon" aria-hidden="true"></i>
+                <div class="metric-value" id="total-carbon">0</div>
+                <div class="metric-label">kg CO₂ / night</div>
+              </div>
+              <div class="metric-card">
+                <i class="fas fa-seedling metric-icon" aria-hidden="true"></i>
+                <div class="metric-value" id="avg-eco-score">0</div>
+                <div class="metric-label">Avg Eco Score</div>
+              </div>
+              <div class="metric-card">
+                <i class="fas fa-dollar-sign metric-icon" aria-hidden="true"></i>
+                <div class="metric-value" id="total-cost">$0</div>
+                <div class="metric-label">Est. Total / night</div>
+              </div>
+              <div class="metric-card">
+                <i class="fas fa-certificate metric-icon" aria-hidden="true"></i>
+                <div class="metric-value" id="total-destinations">0</div>
+                <div class="metric-label">Destinations</div>
+              </div>
+            </div>
+            <div class="carbon-offset-suggestion" id="carbon-offset-section">
+              <h4><i class="fas fa-tree" aria-hidden="true"></i> Carbon Offset Recommendation</h4>
+              <p id="offset-text"></p>
+              <div class="offset-progress">
+                <div class="offset-bar" id="offset-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PAGE: VOYAGER -->
+
+    <!-- ==================== PAGE: DASHBOARD ==================== -->
+    <section id="page-dashboard" class="page" aria-label="Your eco journeys dashboard" hidden>
+      <div class="page-hero page-hero-dashboard">
+        <div class="container">
+          <h1 class="page-hero-title">Eco-Journeys</h1>
+          <p class="page-hero-subtitle">Your personal sustainable travel hub</p>
+        </div>
+      </div>
+      <div class="container">
+        <!-- Auth Gate -->
+        <div id="dashboard-auth-gate" class="auth-gate" hidden>
+          <div class="auth-gate-content">
+            <i class="fas fa-lock auth-icon" aria-hidden="true"></i>
+            <h2>Sign in to access your Eco-Journeys</h2>
+            <p>Track your bookings, manage your wishlist, and view your sustainability impact.</p>
+            <button class="btn btn-primary btn-lg" id="dashboard-login-btn">
+              <i class="fas fa-user" aria-hidden="true"></i> Login / Register
+            </button>
+          </div>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div id="dashboard-content" hidden>
+          <!-- User Welcome -->
+          <div class="dashboard-welcome">
+            <div class="welcome-left">
+              <div class="user-avatar-large" id="user-avatar-large" aria-hidden="true">U</div>
+              <div>
+                <h2 id="welcome-name">Welcome back!</h2>
+                <p id="welcome-email" class="text-muted"></p>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" id="logout-btn" aria-label="Logout">
+              <i class="fas fa-sign-out-alt" aria-hidden="true"></i> Logout
+            </button>
+          </div>
+
+          <!-- Dashboard Tabs -->
+          <div class="dashboard-tabs" role="tablist" aria-label="Dashboard sections">
+            <button class="tab-btn active" data-tab="bookings" role="tab" aria-selected="true" aria-controls="tab-bookings">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i> Bookings
+            </button>
+            <button class="tab-btn" data-tab="wishlist" role="tab" aria-selected="false" aria-controls="tab-wishlist">
+              <i class="fas fa-heart" aria-hidden="true"></i> Wishlist
+            </button>
+            <button class="tab-btn" data-tab="reviews" role="tab" aria-selected="false" aria-controls="tab-reviews">
+              <i class="fas fa-star" aria-hidden="true"></i> My Reviews
+            </button>
+            <button class="tab-btn" data-tab="impact" role="tab" aria-selected="false" aria-controls="tab-impact">
+              <i class="fas fa-leaf" aria-hidden="true"></i> Impact
+            </button>
+          </div>
+
+          <!-- Tab: Bookings -->
+          <div class="tab-panel active" id="tab-bookings" role="tabpanel" aria-label="My bookings">
+            <div id="bookings-list">
+              <!-- Populated by JS -->
+            </div>
+            <div id="no-bookings" class="empty-state" hidden>
+              <i class="fas fa-calendar empty-icon" aria-hidden="true"></i>
+              <h3>No bookings yet</h3>
+              <p>Start exploring and book your first eco-experience!</p>
+              <button class="btn btn-primary" data-page="discover">Discover Destinations</button>
+            </div>
+          </div>
+
+          <!-- Tab: Wishlist -->
+          <div class="tab-panel" id="tab-wishlist" role="tabpanel" aria-label="My wishlist" hidden>
+            <div id="wishlist-grid" class="cards-grid">
+              <!-- Populated by JS -->
+            </div>
+            <div id="no-wishlist" class="empty-state" hidden>
+              <i class="fas fa-heart empty-icon" aria-hidden="true"></i>
+              <h3>Your wishlist is empty</h3>
+              <p>Heart any destination to save it here for later.</p>
+              <button class="btn btn-primary" data-page="discover">Browse Destinations</button>
+            </div>
+          </div>
+
+          <!-- Tab: Reviews -->
+          <div class="tab-panel" id="tab-reviews" role="tabpanel" aria-label="My reviews" hidden>
+            <div id="reviews-list">
+              <!-- Populated by JS -->
+            </div>
+            <div id="no-reviews" class="empty-state" hidden>
+              <i class="fas fa-star empty-icon" aria-hidden="true"></i>
+              <h3>No reviews yet</h3>
+              <p>After your trips, share your experience to help other eco-travelers.</p>
+            </div>
+          </div>
+
+          <!-- Tab: Impact -->
+          <div class="tab-panel" id="tab-impact" role="tabpanel" aria-label="My sustainability impact" hidden>
+            <div class="impact-dashboard">
+              <div class="impact-stat-card">
+                <i class="fas fa-plane impact-stat-icon" aria-hidden="true"></i>
+                <div class="impact-stat-value" id="stat-trips">0</div>
+                <div class="impact-stat-label">Eco Trips Taken</div>
+              </div>
+              <div class="impact-stat-card">
+                <i class="fas fa-cloud impact-stat-icon" aria-hidden="true"></i>
+                <div class="impact-stat-value" id="stat-carbon">0 kg</div>
+                <div class="impact-stat-label">Carbon Offset</div>
+              </div>
+              <div class="impact-stat-card">
+                <i class="fas fa-tree impact-stat-icon" aria-hidden="true"></i>
+                <div class="impact-stat-value" id="stat-trees">0</div>
+                <div class="impact-stat-label">Trees Equivalent</div>
+              </div>
+              <div class="impact-stat-card">
+                <i class="fas fa-leaf impact-stat-icon" aria-hidden="true"></i>
+                <div class="impact-stat-value" id="stat-ecopoints">0</div>
+                <div class="impact-stat-label">Eco-Points Earned</div>
+              </div>
+            </div>
+            <div class="eco-badge-section">
+              <h3>Your Eco-Badges</h3>
+              <div class="badges-grid" id="badges-grid" aria-label="Earned eco-badges">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PAGE: DASHBOARD -->
+
+    <!-- ==================== PAGE: NETWORK (Provider Portal) ==================== -->
+    <section id="page-network" class="page" aria-label="Eco-Explorer Network provider portal" hidden>
+      <div class="page-hero page-hero-network">
+        <div class="container">
+          <h1 class="page-hero-title">Eco-Explorer Network</h1>
+          <p class="page-hero-subtitle">Connect your sustainable business with eco-conscious travelers worldwide</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <!-- Provider Auth Gate -->
+        <div id="provider-auth-gate" class="auth-gate" hidden>
+          <div class="auth-gate-content">
+            <i class="fas fa-store auth-icon" aria-hidden="true"></i>
+            <h2>Provider Portal</h2>
+            <p>Login or register as an eco-tourism provider to manage your listings and bookings.</p>
+            <button class="btn btn-primary btn-lg" id="provider-login-btn">
+              <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Provider Login / Register
+            </button>
+          </div>
+        </div>
+
+        <!-- Provider Dashboard -->
+        <div id="provider-dashboard" hidden>
+          <div class="dashboard-welcome">
+            <div class="welcome-left">
+              <div class="user-avatar-large provider-avatar" aria-hidden="true">
+                <i class="fas fa-store" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h2 id="provider-name">Provider Dashboard</h2>
+                <p class="text-muted">Eco-Tourism Provider</p>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-sm" id="provider-logout-btn" aria-label="Provider logout">
+              <i class="fas fa-sign-out-alt" aria-hidden="true"></i> Logout
+            </button>
+          </div>
+
+          <!-- Analytics Summary -->
+          <div class="provider-stats">
+            <div class="provider-stat">
+              <i class="fas fa-calendar-check" aria-hidden="true"></i>
+              <span class="provider-stat-value" id="provider-bookings">12</span>
+              <span class="provider-stat-label">Total Bookings</span>
+            </div>
+            <div class="provider-stat">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <span class="provider-stat-value" id="provider-rating">4.8</span>
+              <span class="provider-stat-label">Avg Rating</span>
+            </div>
+            <div class="provider-stat">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+              <span class="provider-stat-value" id="provider-views">348</span>
+              <span class="provider-stat-label">Profile Views</span>
+            </div>
+            <div class="provider-stat">
+              <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+              <span class="provider-stat-value" id="provider-revenue">$2,840</span>
+              <span class="provider-stat-label">Revenue (Month)</span>
+            </div>
+          </div>
+
+          <!-- Provider Tabs -->
+          <div class="dashboard-tabs" role="tablist" aria-label="Provider dashboard sections">
+            <button class="tab-btn active" data-tab="p-listings" role="tab" aria-selected="true" aria-controls="tab-p-listings">
+              <i class="fas fa-list" aria-hidden="true"></i> My Listings
+            </button>
+            <button class="tab-btn" data-tab="p-bookings" role="tab" aria-selected="false" aria-controls="tab-p-bookings">
+              <i class="fas fa-calendar" aria-hidden="true"></i> Bookings
+            </button>
+            <button class="tab-btn" data-tab="p-add" role="tab" aria-selected="false" aria-controls="tab-p-add">
+              <i class="fas fa-plus" aria-hidden="true"></i> Add Listing
+            </button>
+          </div>
+
+          <!-- Provider Tab: Listings -->
+          <div class="tab-panel active" id="tab-p-listings" role="tabpanel" aria-label="My listings">
+            <div id="provider-listings-list">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Provider Tab: Bookings -->
+          <div class="tab-panel" id="tab-p-bookings" role="tabpanel" aria-label="Provider bookings" hidden>
+            <div id="provider-bookings-list">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Provider Tab: Add Listing -->
+          <div class="tab-panel" id="tab-p-add" role="tabpanel" aria-label="Add new listing" hidden>
+            <div class="add-listing-form-wrap">
+              <h2>Add New Eco Listing</h2>
+              <form id="add-listing-form" novalidate aria-label="Add new listing form">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="listing-name">Lodge / Experience Name *</label>
+                    <input type="text" id="listing-name" class="form-control" required aria-required="true" placeholder="e.g. Rainforest Canopy Lodge" />
+                  </div>
+                  <div class="form-group">
+                    <label for="listing-location">Location *</label>
+                    <input type="text" id="listing-location" class="form-control" required aria-required="true" placeholder="e.g. Costa Rica" />
+                  </div>
+                  <div class="form-group">
+                    <label for="listing-price">Price per Night (USD) *</label>
+                    <input type="number" id="listing-price" class="form-control" required aria-required="true" min="1" placeholder="e.g. 150" />
+                  </div>
+                  <div class="form-group">
+                    <label for="listing-rating">Sustainability Rating *</label>
+                    <select id="listing-rating" class="form-control" required aria-required="true" aria-label="Select sustainability rating">
+                      <option value="">Select rating</option>
+                      <option value="5">5 - Platinum (Exceptional)</option>
+                      <option value="4">4 - Gold (Excellent)</option>
+                      <option value="3">3 - Silver (Good)</option>
+                      <option value="2">2 - Bronze (Developing)</option>
+                    </select>
+                  </div>
+                  <div class="form-group form-full">
+                    <label for="listing-description">Description *</label>
+                    <textarea id="listing-description" class="form-control" required aria-required="true" rows="4" placeholder="Describe your eco-lodge, its unique features and location..."></textarea>
+                  </div>
+                  <div class="form-group form-full">
+                    <label for="listing-practices">Sustainability Practices * (one per line)</label>
+                    <textarea id="listing-practices" class="form-control" required aria-required="true" rows="4" placeholder="e.g. 100% solar powered&#10;Rainwater harvesting&#10;Zero-waste kitchen"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="listing-carbon">Carbon Footprint (kg CO₂/night)</label>
+                    <input type="number" id="listing-carbon" class="form-control" min="0" placeholder="e.g. 8" />
+                  </div>
+                  <div class="form-group">
+                    <label for="listing-energy">Renewable Energy %</label>
+                    <input type="number" id="listing-energy" class="form-control" min="0" max="100" placeholder="e.g. 100" />
+                  </div>
+                  <div class="form-group form-full">
+                    <label class="filter-label">Eco Certifications</label>
+                    <div class="checkbox-group checkbox-inline" role="group" aria-label="Select certifications">
+                      <label class="checkbox-label"><input type="checkbox" class="listing-cert" value="Green Globe" /> Green Globe</label>
+                      <label class="checkbox-label"><input type="checkbox" class="listing-cert" value="EarthCheck" /> EarthCheck</label>
+                      <label class="checkbox-label"><input type="checkbox" class="listing-cert" value="Rainforest Alliance" /> Rainforest Alliance</label>
+                      <label class="checkbox-label"><input type="checkbox" class="listing-cert" value="Nordic Swan Ecolabel" /> Nordic Swan</label>
+                    </div>
+                  </div>
+                  <div class="form-group form-full">
+                    <label class="filter-label">Activity Types</label>
+                    <div class="checkbox-group checkbox-inline" role="group" aria-label="Select activity types">
+                      <label class="checkbox-label"><input type="checkbox" class="listing-activity" value="Hiking" /> Hiking</label>
+                      <label class="checkbox-label"><input type="checkbox" class="listing-activity" value="Wildlife Watching" /> Wildlife Watching</label>
+                      <label class="checkbox-label"><input type="checkbox" class="listing-activity" value="Kayaking" /> Kayaking</label>
+                      <label class="checkbox-label"><input type="checkbox" class="listing-activity" value="Cultural Immersion" /> Cultural Immersion</label>
+                      <label class="checkbox-label"><input type="checkbox" class="listing-activity" value="Marine Conservation" /> Marine Conservation</label>
+                    </div>
+                  </div>
+                  <div class="form-group form-full">
+                    <label class="filter-label">
+                      <i class="fas fa-image" aria-hidden="true"></i> Eco-Certification Documents (Simulated Upload)
+                    </label>
+                    <div class="file-upload-area" id="cert-upload" role="button" tabindex="0" aria-label="Upload certification documents">
+                      <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                      <p>Drag & drop or click to upload certification PDFs</p>
+                      <span class="file-upload-note">Max 10MB per file. PDF, JPG, PNG accepted.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-lg" aria-label="Submit new listing">
+                    <i class="fas fa-plus" aria-hidden="true"></i> Submit Listing for Review
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END PAGE: NETWORK -->
+
+    <!-- ==================== PAGE: SETTINGS ==================== -->
+    <section id="page-settings" class="page" aria-label="Settings and personalization" hidden>
+      <div class="page-hero page-hero-settings">
+        <div class="container">
+          <h1 class="page-hero-title">Settings</h1>
+          <p class="page-hero-subtitle">Personalize your ETCP experience</p>
+        </div>
+      </div>
+      <div class="container settings-layout">
+        <nav class="settings-nav" aria-label="Settings navigation">
+          <button class="settings-nav-btn active" data-settings="preferences" aria-label="Preferences settings">
+            <i class="fas fa-sliders-h" aria-hidden="true"></i> Preferences
+          </button>
+          <button class="settings-nav-btn" data-settings="accessibility" aria-label="Accessibility settings">
+            <i class="fas fa-universal-access" aria-hidden="true"></i> Accessibility
+          </button>
+          <button class="settings-nav-btn" data-settings="notifications" aria-label="Notification settings">
+            <i class="fas fa-bell" aria-hidden="true"></i> Notifications
+          </button>
+          <button class="settings-nav-btn" data-settings="language" aria-label="Language settings">
+            <i class="fas fa-globe" aria-hidden="true"></i> Language
+          </button>
+        </nav>
+
+        <div class="settings-content">
+
+          <!-- Preferences -->
+          <div class="settings-panel active" id="settings-preferences" role="region" aria-label="Preferences panel">
+            <h2>Travel Preferences</h2>
+            <div class="settings-section">
+              <h3>Preferred Activities</h3>
+              <div class="checkbox-group checkbox-inline">
+                <label class="checkbox-label"><input type="checkbox" class="pref-activity" value="Hiking" /> Hiking</label>
+                <label class="checkbox-label"><input type="checkbox" class="pref-activity" value="Wildlife Watching" /> Wildlife</label>
+                <label class="checkbox-label"><input type="checkbox" class="pref-activity" value="Cultural Immersion" /> Culture</label>
+                <label class="checkbox-label"><input type="checkbox" class="pref-activity" value="Marine Conservation" /> Marine</label>
+                <label class="checkbox-label"><input type="checkbox" class="pref-activity" value="Kayaking" /> Kayaking</label>
+              </div>
+            </div>
+            <div class="settings-section">
+              <h3>Budget Range</h3>
+              <label for="pref-budget" class="filter-label">Max per night: <span id="budget-display">$300</span></label>
+              <input type="range" id="pref-budget" class="price-range" min="50" max="500" value="300" step="10" aria-label="Budget preference" />
+            </div>
+            <div class="settings-section">
+              <h3>Sustainability Priority</h3>
+              <div class="radio-group" role="radiogroup" aria-label="Sustainability priority level">
+                <label class="radio-label"><input type="radio" name="pref-sustainability" value="any" checked /> All Sustainability Levels</label>
+                <label class="radio-label"><input type="radio" name="pref-sustainability" value="high" /> High Priority (4-5 Eco-Leaves only)</label>
+                <label class="radio-label"><input type="radio" name="pref-sustainability" value="certified" /> Certified Only (must have eco-certification)</label>
+              </div>
+            </div>
+            <div class="settings-section">
+              <h3>Visual Theme</h3>
+              <div class="theme-options" role="group" aria-label="Visual theme selection">
+                <button class="theme-btn active" data-theme="forest" aria-label="Forest theme" aria-pressed="true">
+                  <span class="theme-preview theme-forest" aria-hidden="true"></span>
+                  Forest
+                </button>
+                <button class="theme-btn" data-theme="ocean" aria-label="Ocean theme" aria-pressed="false">
+                  <span class="theme-preview theme-ocean" aria-hidden="true"></span>
+                  Ocean
+                </button>
+                <button class="theme-btn" data-theme="desert" aria-label="Desert theme" aria-pressed="false">
+                  <span class="theme-preview theme-desert" aria-hidden="true"></span>
+                  Desert
+                </button>
+                <button class="theme-btn" data-theme="dark" aria-label="Dark theme" aria-pressed="false">
+                  <span class="theme-preview theme-dark" aria-hidden="true"></span>
+                  Dark Mode
+                </button>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="save-preferences-btn" aria-label="Save preferences">
+              <i class="fas fa-save" aria-hidden="true"></i> Save Preferences
+            </button>
+          </div>
+
+          <!-- Accessibility -->
+          <div class="settings-panel" id="settings-accessibility" role="region" aria-label="Accessibility panel" hidden>
+            <h2>Accessibility Options</h2>
+            <div class="settings-section">
+              <div class="setting-row">
+                <div>
+                  <h3>Large Text Mode</h3>
+                  <p class="text-muted">Increase text size across the platform</p>
+                </div>
+                <label class="toggle" aria-label="Toggle large text mode">
+                  <input type="checkbox" id="large-text-toggle" role="switch" aria-checked="false" />
+                  <span class="toggle-slider" aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <h3>High Contrast Mode</h3>
+                  <p class="text-muted">Enhanced color contrast for better readability</p>
+                </div>
+                <label class="toggle" aria-label="Toggle high contrast mode">
+                  <input type="checkbox" id="high-contrast-toggle" role="switch" aria-checked="false" />
+                  <span class="toggle-slider" aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <h3>Reduce Animations</h3>
+                  <p class="text-muted">Minimize motion effects</p>
+                </div>
+                <label class="toggle" aria-label="Toggle reduced animations">
+                  <input type="checkbox" id="reduce-motion-toggle" role="switch" aria-checked="false" />
+                  <span class="toggle-slider" aria-hidden="true"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notifications -->
+          <div class="settings-panel" id="settings-notifications" role="region" aria-label="Notifications panel" hidden>
+            <h2>Notification Settings</h2>
+            <div class="settings-section">
+              <div class="setting-row">
+                <div>
+                  <h3>Booking Confirmations</h3>
+                  <p class="text-muted">Receive notifications for booking updates</p>
+                </div>
+                <label class="toggle" aria-label="Toggle booking notifications">
+                  <input type="checkbox" id="notif-bookings" checked role="switch" aria-checked="true" />
+                  <span class="toggle-slider" aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <h3>New Eco Destinations</h3>
+                  <p class="text-muted">Alerts when new verified lodges are added</p>
+                </div>
+                <label class="toggle" aria-label="Toggle new destination notifications">
+                  <input type="checkbox" id="notif-destinations" checked role="switch" aria-checked="true" />
+                  <span class="toggle-slider" aria-hidden="true"></span>
+                </label>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <h3>Sustainability Tips</h3>
+                  <p class="text-muted">Weekly eco-travel tips and recommendations</p>
+                </div>
+                <label class="toggle" aria-label="Toggle sustainability tips">
+                  <input type="checkbox" id="notif-tips" role="switch" aria-checked="false" />
+                  <span class="toggle-slider" aria-hidden="true"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Language -->
+          <div class="settings-panel" id="settings-language" role="region" aria-label="Language panel" hidden>
+            <h2>Language & Region</h2>
+            <div class="settings-section">
+              <div class="form-group">
+                <label for="lang-select">Display Language</label>
+                <select id="lang-select" class="form-control" aria-label="Select display language">
+                  <option value="en" selected>English (Default)</option>
+                  <option value="de">Deutsch</option>
+                  <option value="fr">Français</option>
+                  <option value="es">Español</option>
+                  <option value="ja">日本語</option>
+                  <option value="si">සිංහල</option>
+                </select>
+                <p class="text-muted" style="margin-top: 0.5rem; font-size: 0.85rem;">
+                  <i class="fas fa-info-circle" aria-hidden="true"></i>
+                  Full multilingual support is planned for ETCP v2.0. Currently English only.
+                </p>
+              </div>
+              <div class="form-group">
+                <label for="currency-select">Currency Display</label>
+                <select id="currency-select" class="form-control" aria-label="Select currency">
+                  <option value="USD" selected>USD — US Dollar</option>
+                  <option value="EUR">EUR — Euro</option>
+                  <option value="GBP">GBP — British Pound</option>
+                  <option value="LKR">LKR — Sri Lankan Rupee</option>
+                  <option value="AUD">AUD — Australian Dollar</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END PAGE: SETTINGS -->
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo" data-page="home" aria-label="ETCP Home">
+            <span class="logo-icon" aria-hidden="true"><i class="fas fa-leaf"></i></span>
+            <span class="logo-text">ETCP</span>
+          </a>
+          <p>Revolutionizing sustainable travel through verified, transparent eco-tourism experiences worldwide.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Follow ETCP on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Follow ETCP on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Follow ETCP on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Follow ETCP on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation - Explore">
+          <h3>Explore</h3>
+          <ul role="list">
+            <li><a href="#" data-page="discover">Eco Destinations</a></li>
+            <li><a href="#" data-page="voyager">Trip Planner</a></li>
+            <li><a href="#" data-page="discover">Eco-Passes</a></li>
+            <li><a href="#" data-page="discover">Volunteer Experiences</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Footer navigation - Providers">
+          <h3>For Providers</h3>
+          <ul role="list">
+            <li><a href="#" data-page="network">List Your Lodge</a></li>
+            <li><a href="#" data-page="network">Provider Dashboard</a></li>
+            <li><a href="#" data-page="network">Certification Guide</a></li>
+            <li><a href="#" data-page="network">Analytics</a></li>
+          </ul>
+        </nav>
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Get eco-travel inspiration and sustainability tips.</p>
+          <form class="newsletter-form" novalidate aria-label="Newsletter subscription form">
+            <div class="newsletter-row">
+              <label for="newsletter-email" class="sr-only">Email address</label>
+              <input type="email" id="newsletter-email" class="form-control" placeholder="your@email.com" aria-label="Enter your email address" />
+              <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-row">
+        <p>&copy; 2025 ETCP — Eco-Tourism Cloud Platform. All rights reserved.</p>
+        <div class="footer-badges" aria-label="Certifications">
+          <span class="footer-badge" role="img" aria-label="Carbon Neutral"><i class="fas fa-leaf" aria-hidden="true"></i> Carbon Neutral</span>
+          <span class="footer-badge" role="img" aria-label="WCAG 2.1 AA Compliant"><i class="fas fa-universal-access" aria-hidden="true"></i> WCAG 2.1 AA</span>
+          <span class="footer-badge" role="img" aria-label="Verified Eco Platform"><i class="fas fa-certificate" aria-hidden="true"></i> Verified Eco Platform</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       AUTH MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="auth-modal" role="dialog" aria-modal="true" aria-label="Authentication modal" hidden>
+    <div class="modal">
+      <button class="modal-close" id="close-auth-modal" aria-label="Close modal">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <div class="modal-tabs" role="tablist" aria-label="Login or Register">
+        <button class="modal-tab active" data-modal-tab="login" role="tab" aria-selected="true">Login</button>
+        <button class="modal-tab" data-modal-tab="register" role="tab" aria-selected="false">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form" novalidate aria-label="Login form">
+        <h2>Welcome Back</h2>
+        <p class="text-muted">Sign in to access your Eco-Journeys</p>
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-control" required aria-required="true" placeholder="anna@example.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <div class="password-field">
+            <input type="password" id="login-password" class="form-control" required aria-required="true" placeholder="••••••••" autocomplete="current-password" />
+            <button type="button" class="password-toggle" aria-label="Toggle password visibility" data-target="login-password">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div id="login-error" class="form-error" role="alert" hidden></div>
+        <button type="submit" class="btn btn-primary btn-full" aria-label="Sign in">
+          <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Sign In
+        </button>
+        <p class="modal-switch">Don't have an account? <button type="button" class="link-btn" data-modal-tab="register">Register free</button></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="register-form" class="auth-form" novalidate aria-label="Registration form" hidden>
+        <h2>Join ETCP</h2>
+        <p class="text-muted">Create your free eco-traveler account</p>
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label for="reg-firstname">First Name</label>
+            <input type="text" id="reg-firstname" class="form-control" required aria-required="true" placeholder="Anna" autocomplete="given-name" />
+          </div>
+          <div class="form-group">
+            <label for="reg-lastname">Last Name</label>
+            <input type="text" id="reg-lastname" class="form-control" required aria-required="true" placeholder="Müller" autocomplete="family-name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" class="form-control" required aria-required="true" placeholder="anna@example.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Password (min 8 characters)</label>
+          <div class="password-field">
+            <input type="password" id="reg-password" class="form-control" required aria-required="true" minlength="8" placeholder="••••••••" autocomplete="new-password" />
+            <button type="button" class="password-toggle" aria-label="Toggle password visibility" data-target="reg-password">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reg-account-type">Account Type</label>
+          <select id="reg-account-type" class="form-control" aria-label="Select account type">
+            <option value="traveler">Eco-Traveler</option>
+            <option value="provider">Eco-Tourism Provider</option>
+          </select>
+        </div>
+        <div id="register-error" class="form-error" role="alert" hidden></div>
+        <button type="submit" class="btn btn-primary btn-full" aria-label="Create account">
+          <i class="fas fa-leaf" aria-hidden="true"></i> Create Account
+        </button>
+        <p class="modal-switch">Already have an account? <button type="button" class="link-btn" data-modal-tab="login">Sign in</button></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       BOOKING MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-label="Booking modal" hidden>
+    <div class="modal modal-lg">
+      <button class="modal-close" id="close-booking-modal" aria-label="Close booking modal">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <div id="booking-modal-content">
+        <!-- Dynamically populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       BOOKING CONFIRMATION MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="confirmation-modal" role="dialog" aria-modal="true" aria-label="Booking confirmation modal" hidden>
+    <div class="modal confirmation-modal">
+      <div class="confirmation-content">
+        <div class="confirmation-icon" aria-hidden="true">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>Booking Confirmed!</h2>
+        <p>Your eco-adventure is booked. Thank you for traveling sustainably.</p>
+        <div class="booking-ref" id="booking-ref-display" aria-live="polite"></div>
+        <div class="confirmation-details" id="confirmation-details"></div>
+        <p class="confirmation-email">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          A confirmation has been sent to <span id="conf-email"></span>
+        </p>
+        <div class="confirmation-actions">
+          <button class="btn btn-outline" id="close-confirmation-btn" aria-label="Close confirmation">Close</button>
+          <button class="btn btn-primary" data-page="dashboard" id="view-booking-btn" aria-label="View my bookings">
+            <i class="fas fa-calendar-check" aria-hidden="true"></i> View Bookings
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>

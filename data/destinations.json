@@ -1,0 +1,447 @@
+[
+  {
+    "id": 1,
+    "name": "Rainforest Canopy Lodge",
+    "location": "Costa Rica",
+    "country": "Costa Rica",
+    "region": "Central America",
+    "sustainabilityRating": 5,
+    "certifications": ["Green Globe", "Rainforest Alliance"],
+    "activityTypes": ["Hiking", "Wildlife Watching", "Birdwatching"],
+    "pricePerNight": 180,
+    "heroImage": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&q=80",
+      "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80",
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80"
+    ],
+    "description": "Nestled within Costa Rica's pristine rainforest canopy, this award-winning eco-lodge offers an immersive experience connecting travelers with one of the world's most biodiverse ecosystems. Every aspect of the lodge has been designed to minimize environmental impact while maximizing the magic of the natural world.",
+    "sustainabilityPractices": [
+      "100% solar and hydroelectric powered",
+      "Rainwater harvesting and purification system",
+      "Zero-waste kitchen with composting program",
+      "Local staff employment — 98% from surrounding communities",
+      "Wildlife corridor maintenance and reforestation program",
+      "Plastic-free policy — biodegradable toiletries provided"
+    ],
+    "carbonFootprint": 8,
+    "renewableEnergy": 100,
+    "waterConservation": "Rainwater harvesting supplies 70% of daily water needs. Grey water recycled for irrigation.",
+    "communityImpact": "Employs 47 local residents, supports 3 local schools, and funds community healthcare programs.",
+    "wildlifeProtection": "Active monitoring of 120+ species. Participates in jaguar and tapir conservation corridors.",
+    "amenities": ["Private nature trails", "Canopy tours", "Guided birdwatching", "Organic restaurant", "Yoga deck", "Naturalist guides"],
+    "reviews": [
+      { "author": "Anna M.", "country": "Germany", "rating": 5, "comment": "Truly authentic sustainable experience. Woke up to howler monkeys every morning!", "date": "2024-11-15", "avatar": "A" },
+      { "author": "James K.", "country": "UK", "rating": 5, "comment": "The most responsible lodge I have ever stayed at. Transparency about their practices is impressive.", "date": "2024-10-22", "avatar": "J" },
+      { "author": "Sophie L.", "country": "France", "rating": 4, "comment": "Incredible biodiversity. Food was organic and delicious. Highly recommend the canopy tour.", "date": "2024-09-05", "avatar": "S" }
+    ],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Sinharaja Forest Retreat",
+    "location": "Sri Lanka",
+    "country": "Sri Lanka",
+    "region": "Asia",
+    "sustainabilityRating": 5,
+    "certifications": ["Green Globe", "EarthCheck"],
+    "activityTypes": ["Wildlife Watching", "Hiking", "Cultural Immersion", "Birdwatching"],
+    "pricePerNight": 120,
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+      "https://images.unsplash.com/photo-1552751753-0fc84ae5b6c8?w=800&q=80",
+      "https://images.unsplash.com/photo-1576077405877-3b5d18c91b22?w=800&q=80"
+    ],
+    "description": "Adjacent to the UNESCO World Heritage Sinharaja Forest Reserve, this eco-retreat offers unparalleled access to Sri Lanka's last remaining tropical rainforest. Home to 60% of Sri Lanka's endemic bird species, Sinharaja is a paradise for nature lovers seeking genuine, low-impact immersion.",
+    "sustainabilityPractices": [
+      "Solar-powered water heating and lighting",
+      "Organic vegetable and herb garden on-site",
+      "Partnerships with Sinharaja conservation authorities",
+      "Zero single-use plastics — reusable bottles provided",
+      "Traditional Sri Lankan building techniques used",
+      "Revenue share model — 15% goes directly to forest conservation fund"
+    ],
+    "carbonFootprint": 6,
+    "renewableEnergy": 85,
+    "waterConservation": "On-site natural spring supplies all water needs. Greywater treatment system installed.",
+    "communityImpact": "Partners with 12 local villages for employment, traditional craft sales, and cultural experiences.",
+    "wildlifeProtection": "Anti-poaching patrol funding and leopard monitoring programs in collaboration with Department of Wildlife.",
+    "amenities": ["Forest walking trails", "Birdwatching hides", "Traditional Ayurvedic spa", "Cultural cooking classes", "Village tours", "Night safari"],
+    "reviews": [
+      { "author": "Thomas B.", "country": "Netherlands", "rating": 5, "comment": "A hidden gem. The forest is magical and the staff knowledge is extraordinary.", "date": "2024-12-01", "avatar": "T" },
+      { "author": "Priya R.", "country": "India", "rating": 5, "comment": "Loved the cultural elements alongside the nature focus. Authentic Sri Lankan hospitality.", "date": "2024-11-10", "avatar": "P" }
+    ],
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Aurora Geothermal Retreat",
+    "location": "Iceland",
+    "country": "Iceland",
+    "region": "Europe",
+    "sustainabilityRating": 5,
+    "certifications": ["EarthCheck", "Nordic Swan Ecolabel"],
+    "activityTypes": ["Aurora Watching", "Hiking", "Geothermal Bathing", "Glacier Tours"],
+    "pricePerNight": 320,
+    "heroImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=80",
+      "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=800&q=80",
+      "https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=800&q=80"
+    ],
+    "description": "Set against Iceland's otherworldly volcanic landscape, this award-winning geothermal retreat is entirely powered by Iceland's natural geothermal energy. Guests can witness the Northern Lights from glass-roofed cabins, bathe in private geothermal pools, and explore ancient glaciers with expert naturalist guides.",
+    "sustainabilityPractices": [
+      "100% geothermal energy for heating and electricity",
+      "No single-use plastics — Iceland glacier water in reusable bottles",
+      "Electric vehicle charging points for guests",
+      "Locally sourced food — lamb, skyr, and Arctic char from certified farms",
+      "Carbon offset program for guest flights — trees planted in Iceland",
+      "Glacier monitoring research partnership with University of Iceland"
+    ],
+    "carbonFootprint": 4,
+    "renewableEnergy": 100,
+    "waterConservation": "Geothermal source provides all water. Closed-loop system returns water at natural temperature.",
+    "communityImpact": "Employs exclusively local Icelanders. Funds community arts and cultural preservation projects.",
+    "wildlifeProtection": "Arctic fox sanctuary on property. Whale watching without boat engines — kayak only.",
+    "amenities": ["Glass-roof Northern Lights cabins", "Private geothermal pools", "Glacier hiking", "Ice cave exploration", "Organic Icelandic cuisine", "Photography workshops"],
+    "reviews": [
+      { "author": "Maria S.", "country": "Spain", "rating": 5, "comment": "Saw the Northern Lights from my bed! A once-in-a-lifetime experience.", "date": "2024-12-20", "avatar": "M" },
+      { "author": "Erik J.", "country": "Sweden", "rating": 5, "comment": "Impeccable sustainability standards. The geothermal pool experience is unmatched.", "date": "2024-11-28", "avatar": "E" }
+    ],
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Fiordland Conservation Lodge",
+    "location": "New Zealand",
+    "country": "New Zealand",
+    "region": "Oceania",
+    "sustainabilityRating": 5,
+    "certifications": ["Green Globe", "Qualmark Enviro Gold"],
+    "activityTypes": ["Hiking", "Wildlife Watching", "Kayaking", "Conservation Volunteering"],
+    "pricePerNight": 240,
+    "heroImage": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&q=80",
+      "https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=800&q=80",
+      "https://images.unsplash.com/photo-1459595292360-7f8b37d76367?w=800&q=80"
+    ],
+    "description": "Located within UNESCO-listed Fiordland National Park, this conservation lodge offers access to Milford Sound's dramatic fiords while directly funding New Zealand's native bird recovery programs. Guests may participate in predator control operations helping bring back kiwi and kākāpō populations.",
+    "sustainabilityPractices": [
+      "100% renewable hydroelectric power",
+      "On-site predator control program — trapping invasive stoats",
+      "Guests can volunteer in kiwi nest monitoring",
+      "Organic certified kitchen — 90% locally sourced produce",
+      "Zero waste to landfill certification achieved",
+      "Fiordland National Park access fees reinvested in conservation"
+    ],
+    "carbonFootprint": 5,
+    "renewableEnergy": 100,
+    "waterConservation": "Pristine fiord water source. Advanced filtration with zero chemical treatment.",
+    "communityImpact": "Works with Māori iwi Ngāi Tahu on cultural programs and traditional ecological knowledge.",
+    "wildlifeProtection": "Active kiwi, kākāpō, and tuatara monitoring. Predator-free island project supporter.",
+    "amenities": ["Fiord kayaking", "Guided Milford Track walks", "Wildlife monitoring volunteer days", "Māori cultural experiences", "Astronomy observatory", "Organic restaurant"],
+    "reviews": [
+      { "author": "Claire D.", "country": "Canada", "rating": 5, "comment": "Saw wild kiwi at night! The conservation work here is extraordinary and guests are made part of it.", "date": "2024-10-14", "avatar": "C" },
+      { "author": "Hiro T.", "country": "Japan", "rating": 4, "comment": "Breathtaking scenery and meaningful activities. Perfect for travelers who want to give back.", "date": "2024-09-30", "avatar": "H" }
+    ],
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Masai Mara Eco Safari Camp",
+    "location": "Kenya",
+    "country": "Kenya",
+    "region": "Africa",
+    "sustainabilityRating": 4,
+    "certifications": ["Rainforest Alliance", "Eco Tourism Kenya"],
+    "activityTypes": ["Safari", "Wildlife Watching", "Cultural Immersion", "Conservation Volunteering"],
+    "pricePerNight": 290,
+    "heroImage": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=80",
+      "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80",
+      "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=800&q=80"
+    ],
+    "description": "A low-impact tented camp on community-owned land adjacent to the Masai Mara ecosystem. This camp was co-founded with the Maasai community and operates a strict conservation model that ensures wildlife-based tourism delivers more economic benefit than livestock grazing, protecting the ecosystem for generations.",
+    "sustainabilityPractices": [
+      "Community-owned and co-managed with local Maasai",
+      "Solar panels power all camp lighting and charging",
+      "Mobile camp structure — zero permanent ground impact",
+      "Anti-poaching fund contribution from every booking",
+      "Elephant and lion tracking research support",
+      "Waste management with community recycling initiative"
+    ],
+    "carbonFootprint": 14,
+    "renewableEnergy": 75,
+    "waterConservation": "Borehole water with solar-powered pump. Water conservation policy — limited showers.",
+    "communityImpact": "100% Maasai-employed staff. Camp revenue funds Maasai girls' education scholarships.",
+    "wildlifeProtection": "Big Five monitoring, anti-poaching patrols, and human-wildlife conflict resolution programs.",
+    "amenities": ["Morning and evening game drives", "Bush walks with Maasai guides", "Cultural village visits", "Hot air balloon safari", "Wildlife photography workshops", "Conservation briefings"],
+    "reviews": [
+      { "author": "Grace O.", "country": "USA", "rating": 5, "comment": "The connection to the Maasai community made this far more meaningful than standard safaris.", "date": "2024-08-22", "avatar": "G" },
+      { "author": "François M.", "country": "France", "rating": 4, "comment": "Witnessed the Great Migration! Sustainable model is genuinely impressive.", "date": "2024-07-15", "avatar": "F" }
+    ],
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "Hardangerfjord Nature Cabin",
+    "location": "Norway",
+    "country": "Norway",
+    "region": "Europe",
+    "sustainabilityRating": 5,
+    "certifications": ["Nordic Swan Ecolabel", "Norwegian Eco Certification"],
+    "activityTypes": ["Hiking", "Kayaking", "Skiing", "Wildlife Watching", "Fishing"],
+    "pricePerNight": 195,
+    "heroImage": "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=800&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+    ],
+    "description": "Perched above the dramatic Hardangerfjord — Norway's second-longest fjord — these off-grid cabins offer a profound connection with Norwegian nature. Each cabin is constructed from reclaimed local timber and powered entirely by micro-hydroelectric generation from the mountain stream above.",
+    "sustainabilityPractices": [
+      "100% micro-hydroelectric powered",
+      "Cabins built from reclaimed Norwegian pine",
+      "Certified organic farm-to-table dining",
+      "Electric boat transfers on the fjord",
+      "Fruit orchards and beehives on property",
+      "Leave No Trace hiking programs for all guests"
+    ],
+    "carbonFootprint": 3,
+    "renewableEnergy": 100,
+    "waterConservation": "Fresh mountain spring water directly to cabins. Natural filtration only.",
+    "communityImpact": "Revitalized a declining farming community. Supports traditional Norwegian bunad craftsmanship.",
+    "wildlifeProtection": "Sea eagle and white-tailed eagle nesting sites protected. Salmon run monitoring.",
+    "amenities": ["Private fjord-view hot tubs", "Kayak hire", "Fishing tours", "Norwegian forest hikes", "Aurora Borealis viewing terrace", "Traditional Norwegian cuisine"],
+    "reviews": [
+      { "author": "Lena B.", "country": "Germany", "rating": 5, "comment": "The most peaceful place on earth. Woke up to eagles flying past the window every morning.", "date": "2024-06-18", "avatar": "L" },
+      { "author": "Oscar P.", "country": "UK", "rating": 5, "comment": "Stunning scenery, impeccable green credentials, and the food was sensational.", "date": "2024-05-30", "avatar": "O" }
+    ],
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Tiger's Nest Mountain Lodge",
+    "location": "Bhutan",
+    "country": "Bhutan",
+    "region": "Asia",
+    "sustainabilityRating": 5,
+    "certifications": ["Green Globe", "Bhutan Trust Fund"],
+    "activityTypes": ["Trekking", "Cultural Immersion", "Meditation", "Wildlife Watching"],
+    "pricePerNight": 380,
+    "heroImage": "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=800&q=80",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80",
+      "https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=800&q=80"
+    ],
+    "description": "One of Bhutan's most exclusive eco-lodges, located near the sacred Tiger's Nest Monastery (Paro Taktsang) at 3,120 meters. Operating under Bhutan's 'High Value, Low Volume' tourism philosophy, every visit includes a contribution to Bhutan's Carbon Neutral Commitment and the Bhutan Trust Fund for Environmental Conservation.",
+    "sustainabilityPractices": [
+      "Built following Bhutanese dzong architectural traditions",
+      "Solar and biomass energy — locally sourced wood from managed forests",
+      "Bhutan mandates tourism revenue goes to healthcare and education",
+      "All meals prepared with organic local produce — yak cheese, red rice, wild mushrooms",
+      "Daily Gross National Happiness philosophy integration",
+      "Guest carbon offset included in Bhutan's tourism levy"
+    ],
+    "carbonFootprint": 10,
+    "renewableEnergy": 90,
+    "waterConservation": "Himalayan glacial spring water. Ancient water channels (rachu) maintained.",
+    "communityImpact": "Bhutan's High Value policy ensures every visitor funds free education, healthcare, and infrastructure.",
+    "wildlifeProtection": "Snow leopard and red panda monitoring. 72% of Bhutan is protected forest — the world's only carbon-negative country.",
+    "amenities": ["Tiger's Nest monastery hike", "Traditional Bhutanese hot stone bath", "Archery lessons", "Buddhist meditation sessions", "Farm-to-table cooking classes", "Yak trekking"],
+    "reviews": [
+      { "author": "Rachel W.", "country": "Australia", "rating": 5, "comment": "Life-changing. Bhutan's philosophy permeates everything and the lodge embodies it perfectly.", "date": "2024-04-10", "avatar": "R" },
+      { "author": "Kenji S.", "country": "Japan", "rating": 5, "comment": "The Tiger's Nest hike was transcendent. This is sustainable tourism at its philosophical best.", "date": "2024-03-25", "avatar": "K" }
+    ],
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Galápagos Marine Research Station",
+    "location": "Galápagos Islands",
+    "country": "Ecuador",
+    "region": "South America",
+    "sustainabilityRating": 5,
+    "certifications": ["Rainforest Alliance", "EarthCheck", "UNESCO Partner"],
+    "activityTypes": ["Marine Conservation", "Snorkeling", "Diving", "Wildlife Watching", "Research Volunteering"],
+    "pricePerNight": 420,
+    "heroImage": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&q=80",
+      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+      "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&q=80"
+    ],
+    "description": "A world-class eco-research facility and boutique lodge on Santa Cruz Island, operated in partnership with the Charles Darwin Foundation. Guests become citizen scientists, contributing to marine iguana, sea turtle, and marine ecosystem research. Access strictly regulated by the Galápagos National Park authority.",
+    "sustainabilityPractices": [
+      "Operates under strict Galápagos National Park quotas",
+      "100% solar powered — grid independent",
+      "All food shipped in biodegradable packaging; invasive species prevention protocol",
+      "Electric boats only — no fuel engines in marine reserve",
+      "Guest participation mandatory in conservation briefings",
+      "Contributes 20% of revenue to Charles Darwin Foundation"
+    ],
+    "carbonFootprint": 7,
+    "renewableEnergy": 100,
+    "waterConservation": "Desalination powered by solar. Advanced water recycling system.",
+    "communityImpact": "100% Galápagos islander employment. Funds local children's conservation education program.",
+    "wildlifeProtection": "Marine iguana, sea turtle, blue-footed booby, and giant tortoise monitoring and protection.",
+    "amenities": ["Guided snorkeling with sea lions", "Giant tortoise sanctuary visits", "Marine research participation", "Underwater photography", "Darwin Foundation lectures", "Island hiking"],
+    "reviews": [
+      { "author": "Isabella C.", "country": "Italy", "rating": 5, "comment": "Swimming with sea lions and contributing to real research — this is the future of travel.", "date": "2024-02-14", "avatar": "I" },
+      { "author": "Marco V.", "country": "Brazil", "rating": 5, "comment": "Beyond words. The Galápagos must be protected. This station does critical work.", "date": "2024-01-20", "avatar": "M" }
+    ],
+    "featured": true
+  },
+  {
+    "id": 9,
+    "name": "Amazon River Eco-Lodge",
+    "location": "Amazon",
+    "country": "Peru",
+    "region": "South America",
+    "sustainabilityRating": 4,
+    "certifications": ["Rainforest Alliance", "Green Globe"],
+    "activityTypes": ["Wildlife Watching", "Birdwatching", "Hiking", "River Kayaking", "Cultural Immersion"],
+    "pricePerNight": 155,
+    "heroImage": "https://images.unsplash.com/photo-1588392382834-a891154bca4d?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1588392382834-a891154bca4d?w=800&q=80",
+      "https://images.unsplash.com/photo-1564419320408-38bb80447379?w=800&q=80",
+      "https://images.unsplash.com/photo-1573489867855-28c47be4c7b4?w=800&q=80"
+    ],
+    "description": "Deep within the Peruvian Amazon, this indigenous community-owned lodge provides access to pristine primary rainforest while directly funding its protection. Built on stilts above the floodplain in traditional Shipibo style, the lodge operates a strict no-hunting, no-logging covenant across 50,000 hectares of protected territory.",
+    "sustainabilityPractices": [
+      "Indigenous Shipibo community ownership and governance",
+      "Solar-powered generator with battery backup",
+      "Traditional medicine garden — guests learn from community healers",
+      "50,000 hectare conservation covenant — legally protected",
+      "Anti-logging enforcement funded by tourism revenue",
+      "No motorized boats within 5km of lodge"
+    ],
+    "carbonFootprint": 11,
+    "renewableEnergy": 70,
+    "waterConservation": "Amazon river filtration system. Traditional water management practices applied.",
+    "communityImpact": "Lodge owned and operated entirely by Shipibo Conibo indigenous community. Funds school and clinic.",
+    "wildlifeProtection": "Jaguar, giant otter, pink river dolphin, and harpy eagle monitoring programs.",
+    "amenities": ["Canopy tower birdwatching", "River dolphin spotting", "Piranha fishing (catch and release)", "Indigenous plant medicine walk", "Caiman spotting night tour", "Amazon kayaking"],
+    "reviews": [
+      { "author": "Nina K.", "country": "Poland", "rating": 5, "comment": "The most biodiverse place I have ever visited. Pink dolphins swam around our canoe!", "date": "2024-01-08", "avatar": "N" },
+      { "author": "David R.", "country": "USA", "rating": 4, "comment": "Raw, authentic, powerful. The indigenous guides' knowledge is encyclopedic.", "date": "2023-12-15", "avatar": "D" }
+    ],
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Lemur Valley Wildlife Sanctuary",
+    "location": "Madagascar",
+    "country": "Madagascar",
+    "region": "Africa",
+    "sustainabilityRating": 4,
+    "certifications": ["Rainforest Alliance", "IUCN Partner"],
+    "activityTypes": ["Wildlife Watching", "Hiking", "Conservation Volunteering", "Birdwatching"],
+    "pricePerNight": 140,
+    "heroImage": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80",
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"
+    ],
+    "description": "A purpose-built conservation sanctuary dedicated to protecting Madagascar's critically endangered lemur species and their rapidly declining rainforest habitat. Operated in partnership with the Madagascar Biodiversity Partnership, this lodge offers guests direct involvement in primate monitoring and habitat restoration.",
+    "sustainabilityPractices": [
+      "Lemur corridor protection — 8,000 hectares",
+      "Solar-powered facilities",
+      "Reforestation program — 10,000 trees planted annually",
+      "Participatory conservation — guests plant trees during stay",
+      "Zero imported products — fully local supply chain",
+      "Anti-bushmeat education program for surrounding villages"
+    ],
+    "carbonFootprint": 9,
+    "renewableEnergy": 80,
+    "waterConservation": "Rainwater collection and purification. Constructed wetlands for wastewater treatment.",
+    "communityImpact": "Reforestation employs 80 community members. Literacy program for children funded by lodge.",
+    "wildlifeProtection": "15 lemur species monitored. Fossa, chameleon, and endemic bird species tracked daily.",
+    "amenities": ["Dawn lemur tracking", "Reforestation planting sessions", "Night wildlife walks", "Baobab forest hike", "Traditional Malagasy cooking", "IUCN researcher talks"],
+    "reviews": [
+      { "author": "Amelia T.", "country": "UK", "rating": 5, "comment": "Held a ring-tailed lemur during monitoring. The conservation mission is real and urgent here.", "date": "2023-11-20", "avatar": "A" },
+      { "author": "Baptiste L.", "country": "France", "rating": 4, "comment": "Essential work in one of the most biodiverse yet threatened places on earth.", "date": "2023-10-12", "avatar": "B" }
+    ],
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Bay of Fires Off-Grid Retreat",
+    "location": "Tasmania",
+    "country": "Australia",
+    "region": "Oceania",
+    "sustainabilityRating": 5,
+    "certifications": ["EarthCheck", "Ecotourism Australia"],
+    "activityTypes": ["Hiking", "Marine Conservation", "Kayaking", "Wildlife Watching", "Yoga"],
+    "pricePerNight": 265,
+    "heroImage": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "https://images.unsplash.com/photo-1546961342-ea5f62d5a27b?w=800&q=80"
+    ],
+    "description": "Located along Tasmania's internationally acclaimed Bay of Fires coastline — named for the orange lichen-covered rocks — this fully off-grid retreat offers the ultimate digital detox. No grid electricity, no plastic, no compromise on sustainability. Pure Tasmanian wilderness with wallabies, wombats, and devils on your doorstep.",
+    "sustainabilityPractices": [
+      "100% off-grid — solar, wind, and battery storage",
+      "Compostable toiletries and packaging throughout",
+      "Tasmanian devil conservation supporter",
+      "Native vegetation restoration program",
+      "Digital detox policy — screens not allowed in common areas",
+      "Food waste composting feeds on-site vegetable garden"
+    ],
+    "carbonFootprint": 4,
+    "renewableEnergy": 100,
+    "waterConservation": "Pure rainwater collection from pristine Tasmanian atmosphere. No chemical treatment needed.",
+    "communityImpact": "Exclusively employs Aboriginal Palawa community members as guides and cultural educators.",
+    "wildlifeProtection": "Tasmanian devil, wombat, and echidna sanctuary. Quoll reintroduction program supporter.",
+    "amenities": ["Bay of Fires coastal hike", "Aboriginal cultural walks", "Sunrise yoga on granite boulders", "Sea kayaking", "Wildlife spotting at dusk", "Stargazing (zero light pollution)"],
+    "reviews": [
+      { "author": "Zoe H.", "country": "UK", "rating": 5, "comment": "Saw a Tasmanian devil! The off-grid experience is genuinely liberating.", "date": "2024-03-05", "avatar": "Z" },
+      { "author": "Nathan G.", "country": "USA", "rating": 5, "comment": "Tasmania is extraordinary and this retreat honors it perfectly. Return visitors every year.", "date": "2024-02-20", "avatar": "N" }
+    ],
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Cairngorms Highland Eco-Hotel",
+    "location": "Scotland",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "sustainabilityRating": 4,
+    "certifications": ["Green Tourism Gold", "VisitScotland Green Award"],
+    "activityTypes": ["Hiking", "Wildlife Watching", "Skiing", "Cultural Immersion", "Fishing"],
+    "pricePerNight": 175,
+    "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1580502304784-8985b7eb7260?w=800&q=80",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+    ],
+    "description": "Set in the heart of Cairngorms National Park — the UK's largest national park — this eco-hotel is a converted Victorian shooting lodge transformed into a model of Highland sustainability. With red squirrels in the garden, ospreys overhead, and the world's oldest Caledonian pines surrounding the property, it is a window into Scotland's ancient natural heritage.",
+    "sustainabilityPractices": [
+      "Biomass boiler from sustainably managed Highland forests",
+      "EV charging for all guests and staff",
+      "Rewilding 500 acres of deer-grazed moorland",
+      "Caledonian pine regeneration — 5,000 trees planted",
+      "Scottish wild salmon and game sourced from certified estates",
+      "Zero food miles — 85% of produce grown within 20 miles"
+    ],
+    "carbonFootprint": 12,
+    "renewableEnergy": 85,
+    "waterConservation": "Highland spring water supply. River Dee water quality monitoring partnership.",
+    "communityImpact": "Employs 35 local Highlanders. Sponsors Gaelic language and Highland culture programs.",
+    "wildlifeProtection": "Red squirrel, osprey, red kite, and wildcat monitoring. Beaver reintroduction advocacy.",
+    "amenities": ["Guided Munro summit hikes", "Highland stag watching", "Whisky tasting from local distilleries", "Fly fishing on River Dee", "Red squirrel feeding station", "Traditional Highland ceilidh evenings"],
+    "reviews": [
+      { "author": "Callum M.", "country": "Scotland", "rating": 5, "comment": "Returning for our fifth year. The rewilding progress is visible and the food is extraordinary.", "date": "2024-09-12", "avatar": "C" },
+      { "author": "Yuki N.", "country": "Japan", "rating": 4, "comment": "Red squirrels every morning at breakfast. Scotland is stunning and this hotel is its finest ambassador.", "date": "2024-08-08", "avatar": "Y" }
+    ],
+    "featured": false
+  }
+]
