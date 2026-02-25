@@ -157,19 +157,6 @@ npx live-server
 
 ---
 
-## Deployment — GitHub Pages
-
-See the full step-by-step guide: **[GITHUB_SETUP_GUIDE.md](GITHUB_SETUP_GUIDE.md)**
-
-Quick version:
-
-1. Push this repo to GitHub (public)
-2. Go to **Settings → Pages**
-3. Source: **Deploy from a branch → main → / (root)**
-4. Save — live in ~2 minutes at `https://ace-de-silva.github.io/eco-tourism-cloud-platform/`
-
----
-
 ## Testing Checklist
 
 <details>
