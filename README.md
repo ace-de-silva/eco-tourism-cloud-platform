@@ -31,7 +31,20 @@ Built as a UX/UI design portfolio piece demonstrating end-to-end product thinkin
 
 ## Screenshots
 
-> *(Add screenshots here after deploying — see the [GitHub Setup Guide](GITHUB_SETUP_GUIDE.md) for instructions)*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d77b91d6-d2d9-4d89-b8db-7f5f168b0ac4" width="48%" />
+  <img src="https://github.com/user-attachments/assets/4e48a9eb-4f23-4467-9e00-fb085eef60a8" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/948154b2-f175-4ac1-807d-18542352ff2d" width="48%" />
+  <img src="https://github.com/user-attachments/assets/2f3c7b0a-1817-41ad-b21d-e4c12d33c879" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b58b877f-fdff-4a5b-a904-82513499b4a2" width="48%" />
+  <img src="https://github.com/user-attachments/assets/e98dc9f6-3d7d-4607-a591-f20ffc624ecc" width="48%" />
+</p>
 
 ---
 
